@@ -1,0 +1,14 @@
+2019-12-09,30000,BMW,M3,Just buy it.,https://upload.wikimedia.org/wikipedia/commons/f/f6/2018_BMW_M3_3.0.jpg,2019,0,27000,New,0,0,5740676499
+2019-12-10,300,Boulder,Mobile,Can be reconstructed by smacking it with a wooden club.,http://www.dan-dare.org/Dan%20FRD/BoulderMobileAni.gif,200,0,270,Used,3000000,0,5887887083
+2019-12-10,10000,Creepy,Coupe,It may be haunted with ghost and ghouls but it comes with a free dragon. It can even sometimes fly!,http://www.dan-dare.org/Dan%20FRD/CreepyCoupeAni.gif,1942,0,9000,Used,1000000,0,9479590521
+2019-12-10,5000000,Convert-a,Car,Can change into just about anything that moves.,http://www.dan-dare.org/Dan%20FRD/Convert-A-CarAni.gif,3002,0,4500000,New,0,0,1751219651
+2019-12-10,200000,Crimson,Haybailer,Car/plane hybrid capable of short flights.,http://www.dan-dare.org/Dan%20FRD/CrimsonHaybailerAni.gif,1943,0,180000,Used,100000,0,9445383500
+2019-12-10,60000,Compact,Pussycat,Comes fully equipped with grooming facilities.,http://www.dan-dare.org/Dan%20FRD/CompactPussycatAni.gif,1984,0,54000,Used,38000,0,1738515160
+2019-12-10,250000,Army Surplus,Special,Jeep/Tank hybrid with functional cannon.,http://www.dan-dare.org/Dan%20FRD/ArmySurplusSpecialAni.gif,1985,0,225000,Used,333000,0,5559043480
+2019-12-10,55000,Bullet-Proof,Bomb,1920's saloon car.,http://www.dan-dare.org/Dan%20FRD/Bullet-ProofBombAni.gif,1923,0,49500,Used,75000,0,6317379725
+2019-12-10,50,Arkansas,Chuggabug,Coal-fired range powered wooden buggy.,http://www.dan-dare.org/Dan%20FRD/ArkansasChuggabugAni.gif,1993,0,45,Used,35000,0,4841213546
+2019-12-10,180000,Turbo,Terrific,Really fast.,http://www.dan-dare.org/Dan%20FRD/TurboTerrificAni.gif,1987,0,162000,Used,58000,0,7837152696
+2019-12-10,500,Buzz,Wagon,Buzzsaw tires that can cut through almost anything.,http://www.dan-dare.org/Dan%20FRD/BuzzWagonAni.gif,1982,0,450,Used,12000,0,1918155239
+2019-12-10,250000,Mean,Machine,Rocket-powered car full of concealed weapons.,http://www.dan-dare.org/Dan%20FRD/MeanMachineAni.gif,1954,0,225000,Used,12000,0,4436537677
+2019-12-10,70000,Tesla,Cybertruck,It's not a truck.,https://www.tesla.com/xNVh4yUEc3B9/02_Desktop.jpg,2020,0,63000,New,0,0,2563068349
+2019-08-12,30000,Subaru,WRX,It's a subaru.,https://s.aolcdn.com/commerce/autodata/images/USC80SUC181A021001.jpg,2019,121,27000,New,0,0,3877850328

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Crazy Carl's Crazy Cars</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+	
+<style>
+	@import 'https://fonts.googleapis.com/css?family=Merriweather';
+	body {
+		font-size: 1em;
+		font-family: "Merriweather", Georgia, serif;		
+	}
+	a:link, a:visited {
+		text-decoration: none;
+		color: black;
+	}
+</style>
+</head>
+<body>
