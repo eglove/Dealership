@@ -12,6 +12,10 @@ public class Person {
 		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber=" + phoneNumber + ", email="
 				+ email + ", address=" + address.toString() + "]";
 	}
+	
+	public Person () {
+		// Default
+	}
 
 	public Person(String firstName, String lastName, String phoneNumber, String email, Address address) {
 		

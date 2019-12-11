@@ -24,6 +24,7 @@ public class Vehicle {
 	private String vin; // 12 Unique identifier for vehicle
 
 	public Vehicle() {
+		// Default
 	}
 
 	public Vehicle(String date, String price, String make, String model, String carDescription, String mainImage,
@@ -42,6 +43,14 @@ public class Vehicle {
 		this.kilosRan = kilosRan;
 		this.bid = bid;
 		this.vin = vin;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [date=" + date + ", price=" + price + ", make=" + make + ", model=" + model
+				+ ", carDescription=" + carDescription + ", mainImage=" + mainImage + ", year=" + year
+				+ ", daysInInventory=" + daysInInventory + ", discount=" + discount + ", used=" + used + ", kilosRan="
+				+ kilosRan + ", bid=" + bid + ", vin=" + vin + "]";
 	}
 
 	public String getMake() {

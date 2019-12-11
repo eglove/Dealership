@@ -11,6 +11,10 @@ public class Address {
 		return "Address [streetAddress=" + streetAddress + ", city=" + city + ", state=" + state + ", zipCode="
 				+ zipCode + "]";
 	}
+	
+	public Address() {
+		// Default
+	}
 
 	public Address(String stretAddress, String city, String state, String zipCode) {
 		this.streetAddress = stretAddress;

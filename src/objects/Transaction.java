@@ -5,10 +5,19 @@ public class Transaction implements Comparable<Transaction> {
 	private String vin;
 	private Person p;
 
+	public Transaction() {
+		// Default
+	}
+
 	public Transaction(String transactionDate, String vin, Person p) {
 		this.transactionDate = transactionDate;
 		this.vin = vin;
 		this.p = p;
+	}
+
+	@Override
+	public String toString() {
+		return "Transaction [transactionDate=" + transactionDate + ", vin=" + vin + ", p=" + p + "]";
 	}
 
 	public String getTransactionDate() {
