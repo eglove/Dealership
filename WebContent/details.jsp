@@ -19,7 +19,6 @@
 			kilometers.
 		</div>
 		<div class="col">${carDescription}</div>
-		<div class="col">Days in inventory:&nbsp;${daysInInventory}</div>
 	</div>
 
 	<hr>
