@@ -4,13 +4,13 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <div class="container">
+	<h1 style="text-align: center; margin-top:20px;">${year} ${make} ${model}</h1>
 	<p style="color: red; style= bold">${msg}</p>
-	<div class="row row-cols-1 justify-content-center" style="margin:auto; text-align: center;">
+	<div class="row row-cols-1 justify-content-center" style="width:50vw; margin:auto;">
 		<div class="col">
 			<img width="auto" src="${mainImage}" class="img-fluid rounded"
 				alt="${make} ${model}" />
 		</div>
-		<div class="col">${year} ${make} ${model}</div>
 		<div class="col">
 			<fmt:formatNumber type="currency" maxFractionDigits="2"
 				value="${price}"></fmt:formatNumber>

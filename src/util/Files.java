@@ -39,7 +39,7 @@ public class Files {
 	 * The new string is then appended to the end of a given writable file.
 	 * 
 	 * @param file Any file that can be written to with Buffered/FileWriter
-	 * @param s    Array of strings to be appended to given file, comma separted
+	 * @param s    Array of strings to be appended to given file, comma separated
 	 *             items on single line
 	 */
 	public static void appendToFile(File file, String... s) {

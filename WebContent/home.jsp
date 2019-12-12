@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-<h1 style="text-align: center; color: red;">Crazy Carl's Crazy Cars</h1>
+<h1 style="text-align: center; color: red; margin-top: 20px;">Crazy Carl's Crazy Cars</h1>
 <p style="text-align: center; font-weight: bold;">${msg}</p>
 
 <div class="container" style="margin: auto;">
