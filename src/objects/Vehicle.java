@@ -1,6 +1,10 @@
 package objects;
 
-public class Vehicle {
+import java.io.Serializable;
+
+public class Vehicle implements Serializable {
+	private static final long serialVersionUID = 4219541004023788910L;
+	
 	/*
 	 * Bidding Math:
 	 * 

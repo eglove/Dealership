@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 import objects.Vehicle;
 
 public class Files {
+	// Relative URL's using getProperty(catalina.base) may only be usable when running the app through Eclipse
 	public static final Logger LOGGER = Logger.getLogger(Files.class.getName());
 	private static final String DATALOCATION = System.getProperty("catalina.base") + "\\wtpwebapps\\Dealership\\data\\";
 	public static final File INVENTORYFILE = new File(DATALOCATION + "inventory.txt");
