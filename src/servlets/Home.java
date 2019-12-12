@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -50,6 +51,7 @@ public class Home extends HttpServlet {
 		}
 
 		HttpSession session = request.getSession(true);
+		Collections.sort(inventory);
 		session.setAttribute("inventory", inventory);
 
 		RequestDispatcher rs = request.getRequestDispatcher("home.jsp");

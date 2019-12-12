@@ -2,7 +2,7 @@ package objects;
 
 import java.io.Serializable;
 
-public class Vehicle implements Serializable {
+public class Vehicle implements Serializable, Comparable<Vehicle> {
 	private static final long serialVersionUID = 4219541004023788910L;
 	
 	/*
@@ -159,5 +159,10 @@ public class Vehicle implements Serializable {
 
 	public void setBid(String bid) {
 		this.bid = bid;
+	}
+
+	@Override
+	public int compareTo(Vehicle v) {
+		return this.getDate().compareTo(v.getDate());
 	}
 }
