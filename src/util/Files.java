@@ -15,12 +15,10 @@ import objects.Vehicle;
 
 public class Files {
 	public static final Logger LOGGER = Logger.getLogger(Files.class.getName());
-	public static final String INVENTORYPATH = "C:\\Users\\glove\\Desktop\\CarDealership\\Dealership\\WebContent\\data\\inventory.txt";
-	public static final File INVENTORYFILE = new File(INVENTORYPATH);
-	public static final String LEDGERPATH = "C:\\Users\\glove\\Desktop\\CarDealership\\Dealership\\WebContent\\data\\ledger.txt";
-	public static final File LEDGERFILE = new File(LEDGERPATH);
-	public static final String BIDLEDGERPATH = "C:\\Users\\glove\\Desktop\\CarDealership\\Dealership\\WebContent\\data\\bidLedger.txt";
-	public static final File BIDLEDGERFILE = new File(BIDLEDGERPATH);
+	private static final String DATALOCATION = System.getProperty("catalina.base") + "\\wtpwebapps\\Dealership\\data\\";
+	public static final File INVENTORYFILE = new File(DATALOCATION + "inventory.txt");
+	public static final File LEDGERFILE = new File(DATALOCATION + "ledger.txt");
+	public static final File BIDLEDGERFILE = new File(DATALOCATION + "bidLedger.txt");
 	private static final String READFILE = "Could not read from file.";
 
 	/**
