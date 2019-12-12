@@ -14,7 +14,8 @@ import java.util.logging.Logger;
 import objects.Vehicle;
 
 public class Files {
-	// Relative URL's using getProperty(catalina.base) may only be usable when running the app through Eclipse
+	// Relative URL's using getProperty(catalina.base) may only be usable when
+	// running the app through Eclipse
 	public static final Logger LOGGER = Logger.getLogger(Files.class.getName());
 	private static final String DATALOCATION = System.getProperty("catalina.base") + "\\wtpwebapps\\Dealership\\data\\";
 	public static final File INVENTORYFILE = new File(DATALOCATION + "inventory.txt");
@@ -43,6 +44,8 @@ public class Files {
 	 */
 	public static void appendToFile(File file, String... s) {
 		StringBuilder builder = new StringBuilder();
+		
+		createFileIfNoneExists(file);
 
 		for (String string : s) {
 			if (!string.equals(s[s.length - 1])) {
@@ -69,6 +72,10 @@ public class Files {
 	 * @param token String to be searched for in file.
 	 */
 	public static void removeFromFile(File file, String token) {
+		
+		// Used to prevent errors when searching for the file.
+		createFileIfNoneExists(file);
+		
 		String line;
 		String[] items = null;
 		boolean containsToken = false;
@@ -109,6 +116,8 @@ public class Files {
 		String[] tokens = token.split(",");
 		ArrayList<Vehicle> returnList = new ArrayList<>();
 
+		createFileIfNoneExists(file);
+
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			while ((line = reader.readLine()) != null) {
 				String[] items = line.split(",");
@@ -142,6 +151,8 @@ public class Files {
 	 */
 	public static void updateValue(File file, String token, int index, String newValue) {
 
+		createFileIfNoneExists(file);
+		
 		String line;
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			while ((line = reader.readLine()) != null) {
@@ -172,11 +183,12 @@ public class Files {
 	 */
 	public static boolean sellToLastBidder(String vin) {
 
+		createFileIfNoneExists(BIDLEDGERFILE);
 		String line;
 
 		// Create list of all bids on vin
 		ArrayList<Double> bids = new ArrayList<>();
-		try (BufferedReader reader = new BufferedReader(new FileReader(util.Files.BIDLEDGERFILE))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader(BIDLEDGERFILE))) {
 			while ((line = reader.readLine()) != null) {
 				String[] items = line.split(",");
 				if (items[1].equals(vin)) {
@@ -193,7 +205,7 @@ public class Files {
 			String highBid = Double.toString(bids.get(0));
 
 			// Search back through file and sell car to person with highest bid on vin
-			try (BufferedReader reader = new BufferedReader(new FileReader(util.Files.BIDLEDGERFILE))) {
+			try (BufferedReader reader = new BufferedReader(new FileReader(BIDLEDGERFILE))) {
 				while ((line = reader.readLine()) != null) {
 					String[] items = line.split(",");
 					if (items[1].equals(vin) && items[2].equals(highBid)) {
@@ -208,7 +220,23 @@ public class Files {
 				LOGGER.severe(READFILE + e);
 			}
 		}
-		
+
 		return false;
+	}
+
+	/**
+	 * Creates a file if it does not already exist. createNewFile method returns
+	 * boolean, logger with display its results.
+	 * 
+	 * @param file to be checked if it exists. If not, a new one will be created.
+	 */
+	public static void createFileIfNoneExists(File file) {
+		try {
+			if (file.createNewFile()) {
+				LOGGER.info("No file, created new.");
+			}
+		} catch (IOException e) {
+			LOGGER.severe("Could not create new file." + e);
+		}
 	}
 }

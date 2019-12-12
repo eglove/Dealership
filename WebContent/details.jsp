@@ -5,12 +5,12 @@
 
 <div class="container">
 	<p style="color: red; style= bold">${msg}</p>
-	<div class="row row-cols-1 justify-content-center">
+	<div class="row row-cols-1 justify-content-center" style="margin:auto; text-align: center;">
 		<div class="col">
 			<img width="auto" src="${mainImage}" class="img-fluid rounded"
 				alt="${make} ${model}" />
 		</div>
-		<div class="col">${year}&nbsp;${make}&nbsp;${model}</div>
+		<div class="col">${year} ${make} ${model}</div>
 		<div class="col">
 			<fmt:formatNumber type="currency" maxFractionDigits="2"
 				value="${price}"></fmt:formatNumber>
