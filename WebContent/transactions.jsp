@@ -4,7 +4,7 @@
 
 <h1 style="text-align: center;">Cray Carl's Crazy Ledger</h1>
 
-<div class="table-responsive">
+<div class="table-responsive" style="height:80vh;overflow:auto;">
 	<table class="table table-bordered">
 		<thead>
 			<tr>
@@ -20,7 +20,7 @@
 				<th scope="col">ZipCode</th>
 			</tr>
 		</thead>
-		<tbody>
+		<tbody style="display:block;">
 			<c:forEach var="transaction" items="${ledger}">
 				<tr>
 					<th scope="row">${transaction.transactionDate}</th>

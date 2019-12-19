@@ -47,7 +47,6 @@ public class Details extends HttpServlet {
 					HttpSession session = request.getSession(true);
 					long daysInInventory = getDaysInInventory(items);
 					// Update inventory (12 = vin for token) at index 7 (daysInInventory), to new
-					// daysInInventory
 					util.Files.updateValue(util.Files.INVENTORYFILE, items[12], 7, Long.toString(daysInInventory));
 
 					session.setAttribute("date", items[0]);
