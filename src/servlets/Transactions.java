@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -51,9 +50,13 @@ public class Transactions extends HttpServlet {
 			util.Files.LOGGER.severe("Could not read from file." + e);
 		}
 
-		Collections.reverse(ledger);
+		// Reverse items in ledger to print descending
+		ArrayList<Transaction> ledgerReversed = new ArrayList<Transaction>();
+		for (int i = ledger.size()-1; i >= 0; i--) {
+			ledgerReversed.add(ledger.get(i));
+		}
 		HttpSession session = request.getSession(true);
-		session.setAttribute("ledger", ledger);
+		session.setAttribute("ledger", ledgerReversed);
 
 		RequestDispatcher rs = request.getRequestDispatcher("transactions.jsp");
 

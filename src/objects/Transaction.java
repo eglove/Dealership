@@ -1,6 +1,9 @@
 package objects;
 
-public class Transaction implements Comparable<Transaction> {
+import java.io.Serializable;
+
+public class Transaction implements Serializable {
+	private static final long serialVersionUID = 5917968388001215046L;
 	private String transactionDate;
 	private String vin;
 	private Person p;
@@ -42,13 +45,5 @@ public class Transaction implements Comparable<Transaction> {
 
 	public void setVin(String vin) {
 		this.vin = vin;
-	}
-
-	@Override
-	public int compareTo(Transaction o) {
-		if (getTransactionDate() == null || o.getTransactionDate() == null) {
-			return 0;
-		}
-		return getTransactionDate().compareTo(o.getTransactionDate());
 	}
 }
